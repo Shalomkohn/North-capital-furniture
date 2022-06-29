@@ -10,16 +10,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 
     <title>NC Furniture</title>
-
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 <body class="bg-light">
 
     <!-- Header Start --------------------------------------------------------------------------------------------------------->
     <nav class="navbar fixed-top navbar-background">
         <div class="container-lg">
-            <a href="/" class="navbar-brand fs-3">NC Furniture</a>
+            <a href="/" class="navbar-brand nice-font">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <img height="60px" src="/img/favicon.ico" alt="logo">
+                    <div class="d-flex flex-column lh-1">
+                        <span class="fs-4">NC</span>
+                        <span class="fs-7">furniture </span>
+                    </div>
+                </div>
+            </a>
             <button class="navbar-toggler text-dark border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list fs-1"></i>
             </button>
@@ -46,62 +58,105 @@
     </div>
 
     <!-- Hero Start ------------------------------------------------------------------------------------------------------------------>
-    
     <section class="hero">
-        <video playsinline="playsinline" loop="loop" muted="muted" autoplay="autoplay" class="hero__video">
-            <source src="/img/video of couch.mp4" type="video/mp4">
-        </video>
-
+        <div class="hero__video__wrap">
+            <video playsinline="playsinline" loop="loop" muted="muted" autoplay="autoplay" class="hero__video">
+                <source src="/img/video of couch.mp4" type="video/mp4">
+            </video>
+        </div>  
         <div class="hero__content text-center">
-            <h1 style="font-size: 40px; text-shadow: 1px 1px 2px #777;">Where furniture hits home</h1>
-        </div>
-
+            <h1 class=" fw-light">where furniture hits home</h1>
+        </div>  
         <a href="#scroll-down" class="hero__scrol-btn">
             Explore<i class="bi bi-arrow-down-short fs-4"></i>
         </a>
     </section>
 
+
     <!-- Hero End ------------------------------------------------------------------------------------------------------------------>
 
     <a id="scroll-down"></a>
 
-    <!-- Section one start ------------------------------------------------------------------------------------------------------------------>
+    <!-- Steps start ------------------------------------------------------------------------------------------------------------------>
 
-    <section class="steps">
+    <section class="steps steps-alt-background">
         <div class="mb-4 row position-relative">
             <img src="/img/small-unnamed.jpg" alt="chair-image" class="col-12 col-sm-6 steps-img position-relative img-fluid">
             <div class="col-12 col-sm-6 steps-content">
                 <span>01</span>
                 <h1 class="mb-3">Stunning furniture styles</h1>
-                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi quae enim vel obcaecati placeat minus quisquam, odit maxime nesciunt?</p>
+                <p class="mb-3">Our innovative design is driven by the belief that furniture should fit this home, and the next one.</p>
                 <a href="#" class="text-dark fs-4">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </section>
-    <section class="steps steps-alt-background">
+    <section class="steps">
         <div class="mb-4 row position-relative">
             <div class="col-12 col-sm-6 steps-content text-sm-end">
                 <span>02</span>
-                <h1 class="mb-3">Surprizing take and critique</h1>
-                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi quae enim vel obcaecati placeat minus quisquam, odit maxime nesciunt?</p>
+                <h1 class="mb-3">Quality on a new level</h1>
+                <p class="mb-3">We continuously strive to delight our customers with outstanding Quality of our products.</p>
                 <a href="#" class="text-dark fs-4">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
             <img src="/img/small-2-&-Table.jpg" alt="chair-image" class="col-12 col-sm-6 steps-img position-relative img-fluid">
         </div>
     </section>
-    <section class="steps">
+    <section class="steps steps-alt-background">
         <div class="mb-4 row position-relative">
             <img src="/img/small-gray.jpg" alt="chair-image" class="col-12 col-sm-6 steps-img img-fluid">
             <div class="col-12 col-sm-6 steps-content">
                 <span>03</span>
-                <h1 class="mb-3">Essentialy abstract nostalgia</h1>
-                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi quae enim vel obcaecati placeat minus quisquam, odit maxime nesciunt?</p>
+                <h1 class="mb-3">Durable, premium materials</h1>
+                <p class="mb-3">
+                    We use materials like sustainably-forested wood, strengthened steel hardware, and top-grain Italian leather.
+                </p>
                 <a href="#" class="text-dark fs-4">Read More <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- section one end ----------------------------------------------------------------------------------------------------------------------->
+    <!-- Steps end ----------------------------------------------------------------------------------------------------------------------->
+    <!-- circles start ---------------------------------------------------------------------------------------------------------------------------->
+    <section>
+        <h1 class="nice-font text-center fs-1 mb-0 mt-4">Meet Our Team</h1>
+        <div class="our-team">
+            <div class="our-team__cards d-flex flex-row">
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/19.jpg" alt="">
+                    <div class="fs-4">David</div>
+                    <i>on site director</i>
+                </div>
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/36.jpg" alt="">
+                    <div class="fs-4">Anne</div>
+                    <i>Marketing Manager</i>
+                </div>
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/21.jpg" alt="">
+                    <div class="fs-4">Oliver</div>
+                    <i>Designer</i>
+                </div>
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/48.jpg" alt="">
+                    <div class="fs-4">Charlotte</div>
+                    <i>Administrative Assistant</i>
+                </div>
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/33.jpg" alt="">
+                    <div class="fs-4">James</div>
+                    <i>Chief Operating Officer</i>
+                </div>
+                <div class="m-4 text-center">
+                    <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/85.jpg" alt="">
+                    <div class="fs-4">Sophia</div>
+                    <i>Project Manager</i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- cirecles end ----------------------------------------------------------------------------------------------------------------------->
 
 
     <!-- section with 3 col's ---------------------------------------------------------------------------------------------------------------------------->
@@ -109,25 +164,31 @@
     <section class="bg-dark text-white">
         <div class="py-4">
             <div class="row justify-content-between">
-                <div class="col-12 col-md-4 mb-4 mx-auto">
-                    <div class="m-4">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-4 bottom-card__content-wrap mx-auto">
+                        <img src="/img/big-reading-on-couch.jpg" alt="big coutch" loading="lazy" class="mb-4 bottom-card">
+                        <h3 class="fw-light">Our furniture, Your comfort</h3>
+                        <p class="fw-light">We knew we wanted to make a meaningful difference and set a new standard
+                            <a href="#" class="text-secondary ms-3 text-decoration-none"><i> read more </i><i class="bi bi-arrow-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-4 bottom-card__content-wrap mx-auto">
                         <img src="/img/big-couch.jpg" alt="big coutch" loading="lazy" class="mb-4 bottom-card">
-                        <h3>A couch, not like you know it</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur obcaecati eos consequatur, beatae deserunt.</p>
+                        <h3 class="fw-light">A couch like you.</h3>
+                        <p class="fw-light">Normal was never good enough, our company was started with a new approach to furniture
+                            <a href="#" class="text-secondary ms-3 text-decoration-none"><i> read more </i><i class="bi bi-arrow-right"></i></a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4 mx-auto">
-                    <div class="m-4">
-                        <img src="/img/big1.jpg" alt="big coutch" loading="lazy" class="mb-4 bottom-card">
-                        <h3>Our furniture, Your comfort</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur obcaecati eos consequatur, beatae deserunt. Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4 mx-auto">
-                    <div class="m-4">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-4 bottom-card__content-wrap mx-auto">
                         <img src="/img/man-building-couch.jpg" alt="big coutch" loading="lazy" class="mb-4 bottom-card">
-                        <h3>Know what we give</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur obcaecati eos consequatur, beatae deserunt.</p>
+                        <h3 class="fw-light">Know what we give</h3>
+                        <p class="fw-light">Everything we create is crafted with care.
+                            <a href="#" class="text-secondary ms-3 text-decoration-none"><i> read more </i><i class="bi bi-arrow-right"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -137,16 +198,16 @@
 
     <footer class="footer bg-dark text-white">
         <div class="footer-line mx-auto"></div>
-        <div class="d-flex justify-content-between align-items-center py-3">
+        <div class="d-flex justify-content-between align-items-center py-2">
             <div class="col md-4 d-flex align-items-center">
-                <a href="/" class="ms-3 text-decoration-none text-white">
+                <a href="/" class="ms-5 text-decoration-none text-white fs-7">
                     <span>Copyright &copy; 2022 North Capital Furniture</span>
                 </a>
             </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white me-3">
-                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a></li>
-                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a></li>
-                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a></li>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white me-5 fs-2">
+                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
             </ul>
         </div>
     </footer>
